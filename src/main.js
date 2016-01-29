@@ -15,8 +15,6 @@ app.get('/', (req, res) => {
 
     const sum = (num1 && num2) ? adder(parseInt(num1), parseInt(num2)): '';
 
-    console.log(`sum of ${num1} and ${num2} is ${sum}`);
-
     res.send(layout({
         title: 'First Time Node Server - Home',
         activePage: 'home',
