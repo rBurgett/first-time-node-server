@@ -8,6 +8,14 @@
      font-family: sans-serif;
  }
 
+ /*****************************
+  * Content container styles
+  *****************************/
+
+  .content-container {
+      padding: 20px;
+  }
+
 /*****************************
  * Header container styles
  *****************************/
@@ -50,3 +58,11 @@
 .header-container .custom-nav-container .nav-item-container .nav-item:hover {
     background-color: #AAA;
 }
+
+/*****************************
+ * Home container styles
+ *****************************/
+
+ .home-container {
+
+ }
