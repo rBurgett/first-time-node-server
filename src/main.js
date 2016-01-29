@@ -4,14 +4,12 @@ import layout from './components/layout';
 
 const app = express();
 
-app
-    .get('/', (req, res) => {
-        res.send(layout({
-            title: 'First Time Node Server',
-            content: ''
-        }));
-    })
-    .use(express.static('public'));
+app.get('/', (req, res) => {
+    res.send(layout({
+        title: 'First Time Node Server',
+        content: ''
+    }));
+}).use(express.static('public'));
 
 const port = 3000;
 
