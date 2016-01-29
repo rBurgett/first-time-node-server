@@ -1,1 +1,52 @@
 /* Enter your css here! */
+
+/*****************************
+ * Body Styles
+ *****************************/
+
+ body {
+     font-family: sans-serif;
+ }
+
+/*****************************
+ * Header container styles
+ *****************************/
+
+ .header-container {
+
+ }
+
+.header-container .title-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.header-container .title-container .title {
+    text-align: center;
+}
+
+.header-container .custom-nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.header-container .custom-nav-container .nav-item-container {
+    flex-basis: 1;
+    flex-grow: 1;
+}
+.header-container .custom-nav-container .nav-item-container a:hover {
+    text-decoration: none;
+}
+.header-container .custom-nav-container .nav-item-container .nav-item {
+    background-color: #DDD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.header-container .custom-nav-container .nav-item-container .nav-item.active {
+    background-color: #BBB;
+}
+.header-container .custom-nav-container .nav-item-container .nav-item:hover {
+    background-color: #AAA;
+}

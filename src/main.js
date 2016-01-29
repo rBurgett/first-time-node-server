@@ -1,13 +1,22 @@
 import express from 'express';
 
 import layout from './components/layout';
+import home from './components/home/home';
+import about from './components/about/about';
 
 const app = express();
 
 app.get('/', (req, res) => {
     res.send(layout({
-        title: 'First Time Node Server',
-        content: ''
+        title: 'First Time Node Server - Home',
+        activePage: 'home',
+        content: home()
+    }));
+}).get('/about', (req, res) => {
+    res.send(layout({
+        title: 'First Time Node Server - About',
+        activePage: 'about',
+        content: about()
     }));
 }).use(express.static('public'));
 
